@@ -1,0 +1,16 @@
+<Container>:
+    dp: display
+    rows:2
+    BoxLayout:
+        orientation:"horizontal"
+        AddButton:
+            on_release:root.add_one()
+        SubtractButton:
+            on_release:root.subtract_one()
+        MultiplyButton:
+            on_release:root.multiply()
+
+    Label:
+        id: display
+        font_size: dp(50)
+        text:'0'
